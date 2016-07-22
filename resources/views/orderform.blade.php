@@ -135,9 +135,8 @@
                                                 <input id="background"  name="background" type="text" class="form-control" value="#0088cc">
                                             </div>
                                         </div>
-
                                     </div>
-
+                                    <div class="clearfix"></div>
                                     <!--<div class="form-group back-type" id="pattern">
                                         <label class="col-md-4 control-label">Select A Pattern</label>
                                         <div class="col-md-8">
@@ -164,11 +163,11 @@
                                     <div class="form-group">
                                         <label class="col-md-4 control-label">Upload Your Logo</label>
                                         <div class="col-md-7">
-                                            <div class="fileupload fileupload-new" id="logo" name="logo" data-provides="fileupload">
+                                            <div class="fileupload fileupload-new"  name="logo" data-provides="fileupload">
                                                 <div class="input-append">
                                                     <div class="uneditable-input">
                                                         <i class="fa fa-file fileupload-exists"></i>
-                                                        <span class="fileupload-preview"></span>
+                                                        <span class="fileupload-preview">Upload</span>
                                                     </div>
 														<span class="btn btn-default btn-file">
 															<span class="fileupload-exists">Change</span>
@@ -194,15 +193,12 @@
                                             </select>
                                         </div>
                                     </div>
-
-
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label" for="inputDefault">Enter Text</label>
+                                        <label class="col-md-4 control-label" for="design_text">Enter Text</label>
                                         <div class="col-md-8">
                                             <input type="text" name="design_text" class="form-control" id="design_text">
                                         </div>
                                     </div>
-
                                     <div class="form-group">
                                         <label class="col-md-4 control-label">Text Position</label>
                                         <div class="col-md-8">
@@ -285,8 +281,8 @@
                                                     </tr>
                                                     <tr>
                                                         <td><h4><span style="color:#5CC6D0">Background</span></h4></td>
-                                                        <td><span id="dbackgroung" ></span></td>
-                                                        <td><span id="dcolor" ></span></td>
+                                                        <td><span id="dbackground" ></span></td>
+                                                        <td><div id="cl" style=" display: inline">COLOR</div> <span id="dcolor" ></span></td>
                                                         <td><span id="dpattern" ></span></td>
                                                     </tr>
 

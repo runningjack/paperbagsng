@@ -278,12 +278,25 @@
 
         $("#bag_size").on("change",function(){$("#dsize").html($(this).val())});
         $("#orientation").on("change",function(){$("#dorient").html($(this).val())});
-        $("#background_type").on("change",function(){$("#dbackgroung").html($(this).val())});
-        $("#background").blur(function(){$("#dcolor").html($(this).val())});
-        $("#design_text").blur(function(){$("#dtext").html($(this).val())});
+        $("#background_type").on("change",function(){$("#dbackground").html($(this).val())});
+        $("#background").on("change",function(){$("#dcolor").html($(this).val())});
+        $("#design_text").on("blur",function(){$("#dtext").html($(this).val())});
         $("#text_font").on("change",function(){$("#dfont").html($(this).val())});
-        $("#text_font").on("change",function(){$("#dfont").html($(this).val())});
-        $("#ms_example0").blur(function(){});
+        $("#finishing").on("change",function(){
+            $("#dfinishing").html($(this).val())
+            var c = $("#background").val()
+            $("#dcolor").html(c)
+            $("#cl").css("height","50px")
+            $("#cl").css("width","50px")
+        });
+
+        $("#colorpicker-saturation").on("click",function(){
+            var c = $("#background").val()
+            $("#dcolor").html(c)
+            $("#cl").css("background-color",c)
+
+        })
+
         $(".radio").each(function(){
             /*$(this).is(":checked"){
                 $("#dpattern").html($(this).val())
