@@ -1,0 +1,7 @@
+.curve {
+  background-color: #8aa7ca;
+  height: 65px;
+  width: 160px;
+  -moz-border-radius-bottomright: 25px 50px;
+  border-bottom-right-radius: 25px 50px;
+}
